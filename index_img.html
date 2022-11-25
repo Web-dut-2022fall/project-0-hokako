@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <title>Search</title>
+    <script>
+        function imgSearch() {
+            var x = document.getElementById("imgSearchText111").value;
+            window.location.href = "https://www.google.com/search?q=" + x + "&sclient=img&tbm=isch"
+        }
+    </script>
+</head>
+
+<body>
+    <div class="another">
+        <img class="ava" src="tenko1.jpg">
+        <a class="Search" href="index.html">Search</a>
+    </div>
+    <div class="global">
+        <img class="logo" src="google_img_logo.png" alt="google">
+        <form action="https://www.google.com/search/" class="index-form">
+            <input type="text" autocomplete="off" id="imgSearchText111" class="inputText" name="q">
+            <div class="buttonBox">
+                <input class="oneButton" value="Google Image Search" onclick=imgSearch()>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
